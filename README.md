@@ -1,3 +1,4 @@
 # gulp-roast-repository
-Alex Vandermeijden
-alex.vandermeijden@gmail.com
+<p>Designer: Alexander Vandermeijden</p>
+<p>Contact: alex.vandermeijden@gmail.com</p>
+<p>Description: HTML and CSS code for Gulp Roast Coffee Website.</p>
