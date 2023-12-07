@@ -37,21 +37,25 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: right;
 }
 
 nav li {
-    margin: 0 1rem 1rem 1rem;
+    margin: -2rem 1rem 2rem 1rem;
     font-size: 1.3rem;
 }
 /* max width on the image in pixels */
 nav .logo img {
-    max-width: 150px;
+    max-width: 200px;
 }
 /* flex basis on the image container, li */
 nav .logo {
     flex-basis: 100%;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 30%);
 }
 
 nav a {
@@ -79,19 +83,19 @@ nav a {
 }
 
 article {
-    flex-basis: 73%;
+    flex-basis: 50%;
 }
 
 figure {
     margin: 3rem 0 0 0;
-    flex-basis: 25%;
-    background-color: #59331d;
+    flex-basis: 44.5%;
+    background-color: transparent;
     border-radius: 10px;
+    border: solid red;
 }
 
     figure img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-radius: 10px;
     }
 
 figcaption {
@@ -136,3 +140,59 @@ footer {
         display: block;
         margin: 0 1rem 3rem 1rem;
     }
+
+@media (max-width: 992px) {
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 1rem;
+    }
+
+    nav .logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 1rem;
+    }
+
+    nav .logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    article {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    figure {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 0 0;
+        flex-basis: 75%;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+
+    .main {
+        flex-flow: column;
+    }
+}
