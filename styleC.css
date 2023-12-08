@@ -160,6 +160,10 @@ footer {
         flex-basis: 100%;
         text-align: center;
     }
+
+    .main {
+        max-width: 600px;
+    }
 }
 
 @media (max-width: 768px) {
