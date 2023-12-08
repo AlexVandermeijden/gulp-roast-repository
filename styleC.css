@@ -76,7 +76,7 @@ nav a {
 }
 /* sits inside of the white background, centered */
 .main {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
@@ -181,7 +181,7 @@ footer {
 
     article {
         flex-basis: 100%;
-        align-items: center;
+        text-align: center;
     }
 
     figure {
@@ -199,5 +199,4 @@ footer {
         flex-flow: column;
         justify-content: space-between;
     }
-}
 }
