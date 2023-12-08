@@ -43,6 +43,7 @@ nav ul {
 nav li {
     margin: -2rem 1rem 2rem 1rem;
     font-size: 1.3rem;
+    z-index: 2;
 }
 /* max width on the image in pixels */
 nav .logo img {
@@ -56,6 +57,7 @@ nav .logo {
     left: 0%;
     top: 0%;
     transform: translate(0%, 30%);
+    z-index: 1;
 }
 
 nav a {
